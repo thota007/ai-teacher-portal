@@ -1,7 +1,7 @@
 import React from "react"
 import {useHistory} from "react-router-dom"
 import Button from '@material-ui/core/Button';
-import background from '/Users/pratyushthota/ai-teacher-dashboard/src/img/Rollercoaster.jpg';
+import background from '/Users/pratyushthota/ai-teacher-dashboard/src/Rollercoaster.jpg';
 
 function Login() {
     let history = useHistory();
