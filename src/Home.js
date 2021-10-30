@@ -10,6 +10,10 @@ function Home(){
     function handleClick() {
       history.push("/");
     }
+
+    function goToChallenge(){
+        history.push("/challenge");
+    }
     return(
         <div>
             <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection:'row-reverse'}}>
@@ -17,7 +21,7 @@ function Home(){
             </div>
             <h1>WELCOME</h1> 
             <h4>What would you like to do today?</h4>
-            <Button style={{color:'#1e90ff'}} variant='outlined'>Continue from where you left off</Button><br/><br/>
+            <Button onClick={goToChallenge} style={{color:'#1e90ff'}} variant='outlined'>Continue from where you left off</Button><br/><br/>
             <Button style={{color:'#1e90ff'}} variant='outlined'>Start new challenge</Button> 
         </div>
     );
