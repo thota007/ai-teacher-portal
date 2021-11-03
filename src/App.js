@@ -3,7 +3,10 @@ import Login from "./Login"
 import Home from "./Home"
 import Challenge from "./Challenge"
 import Start from "./Start"
+import Groups from "./Groups"
+import Status from "./Status"
 import {Route} from 'react-router-dom'
+
 
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
       <Route exact path= "/home" component={Home}/>
       <Route exact path= "/challenge" component={Challenge}/>
       <Route exact path= "/start" component={Start}/>
+      <Route exact path= "/groups" component={Groups}/>
+      <Route exact path= "/status" component={Status}/>
     </div>
   );
 }

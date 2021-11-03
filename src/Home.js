@@ -11,8 +11,8 @@ function Home(){
       history.push("/");
     }
 
-    function goToChallenge(){
-        history.push("/challenge");
+    function goToStart(){
+        history.push("/start");
     }
     return(
         <div>
@@ -21,8 +21,8 @@ function Home(){
             </div>
             <h1>WELCOME</h1> 
             <h4>What would you like to do today?</h4>
-            <Button onClick={goToChallenge} style={{color:'#1e90ff'}} variant='outlined'>Continue from where you left off</Button><br/><br/>
-            <Button style={{color:'#1e90ff'}} variant='outlined'>Start new challenge</Button> 
+            <Button onClick={goToStart} style={{color:'#1e90ff'}} variant='outlined'>Continue from where you left off</Button><br/><br/>
+            <Button style={{color:'grey'}} variant='outlined' disabled>Start new challenge </Button> 
         </div>
     );
 }
