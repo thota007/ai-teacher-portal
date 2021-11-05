@@ -9,6 +9,9 @@ function Start(){
     const [icon1,setIcon1]=useState('');
     const [icon2,setIcon2]=useState('');
     const [icon3,setIcon3]=useState('');
+
+   
+
     let history = useHistory();
   
     function handleClick() {
@@ -21,6 +24,8 @@ function Start(){
 
     function changeColor1(){
         setIcon1(<CheckIcon style={{fill: "green"}}/>);
+       
+        
     }
     function changeColor2(){
         setIcon2(<CheckIcon style={{fill: "green"}}/>);
@@ -37,7 +42,7 @@ function Start(){
             <h1>WELCOME</h1> 
             <h4>What would you like to do today?</h4>
             <h5>MINI CHALLENGE</h5>
-            <Button endIcon={icon1}  style={{color:'#1e90ff'}} variant='outlined' onClick={changeColor1}>Mini Challenge 1: Height, Mass, and Energy</Button>
+            <Button endIcon={icon1} style={{color:'#1e90ff'}} variant='outlined' onClick={changeColor1}>Mini Challenge 1: Height, Mass, and Energy</Button>
             <Button style={{color:'grey'}} variant='outlined' disabled>Mini Challenge 2: Height, Mass, and Speed</Button> <br/><br/>
             <h5>SUB CHALLENGE</h5>
             <Button endIcon={icon2}  style={{color:'#1e90ff'}} variant='outlined' onClick={changeColor2}>1. Initial Drop Height and Energy</Button>

@@ -6,6 +6,7 @@ import HomeIcon from '@material-ui/icons/Home';
 
 function Groups() {
     let history = useHistory();
+    
   
     function handleClick() {
       history.push("/");
@@ -13,6 +14,7 @@ function Groups() {
 
     function goToStatus() {
       history.push("/status");
+
     } 
 
     function goToCSummary() {
