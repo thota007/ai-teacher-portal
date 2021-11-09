@@ -29,6 +29,10 @@ function Groups() {
       history.push("/progress");
     } 
 
+    function goToParticipation() {
+      history.push("/participation");
+    } 
+
 
     
     
@@ -42,10 +46,15 @@ function Groups() {
 
         <br/><br/><br/><br/>
 
-        <Button onClick={goToStatus} style={{color:'black', borderColor:"red", display: 'flex', height:'100px'}} variant='outlined' >Class Status❗</Button><br/><br/>
-        <Button onClick={goToCSummary} style={{color:'black', borderColor:"red", display: 'flex', height:'100px'}} variant='outlined' >Close-Ended Question Summary!⃝</Button><br/><br/>
-        <Button onClick={goToESummary} style={{color:'black', borderColor:"red", display: 'flex', height:'100px'}} variant='outlined' >Essay Question Summary❗</Button><br/><br/>
-        <Button onClick={goToProgress} style={{color:'black', borderColor:"red", display: 'flex', height:'100px'}} variant='outlined' >Group Progress!⃝</Button><br/><br/>
+        <Button onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Class Status❗</Button>
+        <Button onClick={goToProgress} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Group Progress ❗</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Stuckness!⃝</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Idleness❗</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >One task/off Task❗</Button>
+        <Button onClick={goToParticipation} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Participation</Button>
+        <Button onClick={goToCSummary} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Close-Ended Questions</Button>
+        <Button onClick={goToESummary} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Essay Questions</Button>
+
 
       </div>
     );

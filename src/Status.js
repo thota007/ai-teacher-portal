@@ -28,6 +28,12 @@ function Status() {
       history.push("/progress");
     } 
 
+
+    function goToParticipation() {
+      history.push("/participation");
+    } 
+
+
   
     return (
       <div style={{backgroundImage: `url(${background})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat',width: '100vw', height: '100vh' }}>
@@ -35,12 +41,16 @@ function Status() {
               <HomeIcon style={{width:'7vh',height:'7vh'}} onClick={handleClick}/>
         </div>
 
-        <br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/>
       
-        <Button onClick={goToStatus} style={{color:'black', borderColor:"red", display: 'flex', height:'100px', border:'2px solid red'}} variant='outlined' >Class Status❗</Button><br/><br/>
-        <Button onClick={goToCSummary} style={{color:'black', borderColor:"black", display: 'flex', height:'100px'}} variant='outlined' >Close-Ended Question Summary!⃝</Button><br/><br/>
-        <Button onClick={goToESummary} style={{color:'black', borderColor:"red", display: 'flex', height:'100px', }} variant='outlined' >Essay Question Summary❗</Button><br/><br/>
-        <Button onClick={goToProgress} style={{color:'black', borderColor:"black", display: 'flex', height:'100px'}} variant='outlined' >Group Progress!⃝</Button><br/><br/>
+        <Button onClick={goToStatus} style={{color:'grey', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px', fontWeight:'bold'}} variant='contained' >Class Status❗</Button>
+        <Button onClick={goToProgress} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Group Progress ❗</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Stuckness!⃝</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Idleness❗</Button>
+        <Button disabled onClick={goToStatus} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >One task/off Task❗</Button>
+        <Button onClick={goToParticipation} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Participation</Button>
+        <Button onClick={goToCSummary} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Close-Ended Questions</Button>
+        <Button onClick={goToESummary} style={{color:'black', borderColor:"#1e90ff", display: 'flex', height:'50px', width:'300px', margin:'10px'}} variant='outlined' >Essay Questions</Button>
 
       
       </div>

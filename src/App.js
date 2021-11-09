@@ -8,6 +8,7 @@ import Status from "./Status"
 import CloseSummary from "./CloseSummary"
 import EssaySummary from './EssaySummary';
 import Progress from './Progress';
+import Participation from './Participation';
 import {Route} from 'react-router-dom'
 
 
@@ -24,6 +25,7 @@ function App() {
       <Route exact path= "/cSummary" component={CloseSummary}/>
       <Route exact path= "/eSummary" component={EssaySummary}/>
       <Route exact path= "/progress" component={Progress}/>
+      <Route exact path= "/participation" component={Participation}/>
     </div>
   );
 }

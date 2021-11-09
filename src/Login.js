@@ -11,16 +11,18 @@ function Login() {
     }
   
     return (
-      <div style={{backgroundImage: `url(${background})`, backgroundPosition: 'center bottom', backgroundSize: 'cover', backgroundRepeat: 'no-repeat',width: '100vw', height: '100vh' }}>
-       <h1>ROLLERCOASTER</h1>
+      <div style={{backgroundImage: `url(${background})`, backgroundPosition: 'center',backgroundRepeat: 'no-repeat',backgroundSize:'1500px 600px', height: '110vh' }}>
+
+       <h1 style={{backgroundColor:'#1e90ff',color:'white',height:'7vh'}}>ROLLERCOASTER</h1>
 
        <form> 
-        <input size="40" style={{height:'25px'}} type="text" name="name" placeholder="Username" /><br/><br/>
-        <input size="40" style={{height:'25px'}} type="password" name="pass" placeholder="Password"/><br/><br/>
+        <input size="40" style={{height:'40px', border:'1px solid', borderColor:'grey', width:'250px'}} type="text" name="name" placeholder="Username" /><br/><br/>
+        <input size="40" style={{height:'40px',  border:'1px solid', borderColor:'grey', width:'250px'}} type="password" name="pass" placeholder="Password"/><br/><br/>
       </form>
 
-      <Button style={{backgroundColor:'#87cefa'}} variant='contained' onClick={handleClick}>
-        LOGIN
+      <br/><br/><br/><br/>
+      <Button style={{backgroundColor:'#1e90ff', color:'white', margin:'10px', borderColor:"#1e90ff", width:'250px'}} variant='contained' size='large' onClick={handleClick}>
+        LOG IN
       </Button>
       </div>
     );
