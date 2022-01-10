@@ -40,3 +40,197 @@
 .greenbutton{
   background-color: green;
 }
+
+
+/* tabs */
+.react-tabs{
+  display: flex;
+  margin-left: 0;
+  width: 100%;
+  height: 100vh;
+  border: 1 solid black;
+  color: rgb(3, 3, 3);
+  background: #ffffff;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #ffffff;
+}
+
+.react-tabs__tab {
+  height: 70px;
+  list-style: none;
+  padding: 12px 6px;
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+}
+
+.react-tabs__tab--selected {
+  background: #1c1d1f;
+  border-color: #1c1d1f;
+  border-left: 4px solid #6eb800;
+  color: white;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 100%;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.panel-content {
+  text-align: center;
+}
+
+.wclass{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:1%;
+  left: 0;
+  width: 248px;
+  height: 50px;
+}
+
+.individual{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:1%;
+  left: 32.9%;
+  width: 248.9px;
+  height: 50px;
+}
+
+.group{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:4.4%;
+  left: 17.8%;
+  width: 228px;
+  height: 50px;
+}
+
+.individualb{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:4.4%;
+  left: 33.5%;
+  width: 248.9px;
+  height: 50px;
+}
+
+.wclassb{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:4.4%;
+  left: 0.5%;
+  width: 248px;
+  height: 50px;
+}
+
+.groupb{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:4.4%;
+  left: 17.8%;
+  width: 228px;
+  height: 50px;
+}
+
+.group3{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:12%;
+  left: 93.4%;
+  width: 85px;
+  height: 77.5px;
+  border-radius: 50%;
+}
+
+.wclassc{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:3.8%;
+  left: 0.7%;
+  width: 251px;
+  height: 50px;
+}
+
+.individualc{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:3.8%;
+  left: 33.5%;
+  width: 251px;
+  height: 50px;
+}
+
+.taskstatus{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:-1%;
+  left: 91%;
+  width: 85.5px;
+  height: 73.5px;
+  border-radius: 50%;
+}
+
+.groupc{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:5%;
+  left: 17.8%;
+  width: 228px;
+  height: 50px;
+}
+
+.wclassd{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:5%;
+  left: 0.7%;
+  width: 251px;
+  height: 50px;
+}
+
+.button{
+  align-self: flex-start;
+}
+.group4{
+  background-color:#00000000;
+  align-self: left;
+  position: absolute;
+  top:14.5%;
+  left: 93.5%;
+  width: 85px;
+  height: 77.5px;
+  border-radius: 50%;
+}

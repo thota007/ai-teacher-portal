@@ -1,31 +1,35 @@
 import './App.css';
-import Login from "./Login"
+import Prep from "./Prep"
 import Home from "./Home"
-import Challenge from "./Challenge"
-import Start from "./Start"
-import Groups from "./Groups"
-import Status from "./Status"
-import CloseSummary from "./CloseSummary"
-import EssaySummary from './EssaySummary';
-import Progress from './Progress';
-import Participation from './Participation';
+import Session from "./Session"
+import SessionFormat from './SessionFormat';
 import {Route} from 'react-router-dom'
-
+import Groups from './StudentGroup';
+import Agent from './Agent';
+import Group from './Group'
+import RClass from './RClass'
+import Individual from './Individual';
+import Group3 from './Group3';
+import TaskStatus from './TaskStatus';
+import Summary from './Summary';
 
 
 function App() {
   return (
-    <div className="App" >
-      <Route exact path= "/" component={Login}/>
-      <Route exact path= "/home" component={Home}/>
-      <Route exact path= "/challenge" component={Challenge}/>
-      <Route exact path= "/start" component={Start}/>
+    <div className="App">
+      <Route exact path= "/" component={Home}/>
+      <Route exact path= "/prep" component={Prep}/>
+      <Route exact path= "/session" component={Session}/>
+      <Route exact path= "/sessionformat" component={SessionFormat}/>
       <Route exact path= "/groups" component={Groups}/>
-      <Route exact path= "/status" component={Status}/>
-      <Route exact path= "/cSummary" component={CloseSummary}/>
-      <Route exact path= "/eSummary" component={EssaySummary}/>
-      <Route exact path= "/progress" component={Progress}/>
-      <Route exact path= "/participation" component={Participation}/>
+      <Route exact path= "/agent" component={Agent}/>
+      <Route exact path= "/group" component={Group}/>
+      <Route exact path= "/rclass" component={RClass}/>
+      <Route exact path= "/individual" component={Individual}/>
+      <Route exact path= "/group3" component={Group3}/>
+      <Route exact path= "/taskstatus" component={TaskStatus}/>
+      <Route exact path= "/summary" component={Summary}/>
+      
     </div>
   );
 }

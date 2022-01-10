@@ -11,18 +11,28 @@ function Home(){
       history.push("/");
     }
 
-    function goToStart(){
-        history.push("/start");
+    function goToPrep(){
+        history.push("/prep");
     }
+    function goToGroup(){
+        history.push("/group")
+    }
+
+    function goToSummary(){
+        history.push("/summary")
+    }
+
     return(
         <div>
             <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection:'row-reverse'}}>
                 <HomeIcon style={{width:'7vh',height:'7vh'}} onClick={handleClick}/>
             </div>
-            <h1 style={{color:'grey'}}>WELCOME</h1> 
-            <h4>What would you like to do today?</h4>
-            <Button onClick={goToStart} style={{color:'#1e90ff'}} variant='outlined'>Continue from where you left off</Button><br/><br/>
-            <Button style={{color:'grey'}} variant='outlined' disabled>Start new challenge </Button> 
+            <h3>HOME</h3> 
+            <Button onClick={goToPrep} style={{color:'black', width:'300px'}} variant='outlined'>Prep</Button><br/><br/>
+            <Button  onClick={goToGroup} style={{color:'black', width:'300px'}} variant='outlined'>Real-Time Dashboard</Button><br/><br/>
+            <Button  style={{color:'black', width:'300px'}} variant='outlined'>Summary</Button><br/><br/>
+            <Button  style={{color:'black',width:'300px'}} variant='outlined'>Teach the AI</Button><br/><br/>
+   
         </div>
     );
 }
