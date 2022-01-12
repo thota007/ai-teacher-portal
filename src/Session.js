@@ -18,9 +18,7 @@ function Session() {
       history.push("/");
     }
 
-    function goToGroup() {
-      history.push("/group");
-    }
+    
 
 
     return (
@@ -31,7 +29,7 @@ function Session() {
             </div>
         <h2 style={{textAlign:'left'}}>New Session</h2>
 
-        <Button className="button" variant="outlined" onClick={goToGroup}>Start Session</Button>
+       
 
         <Tabs className="react-tabs">
         <TabList className="react-tabs__tab-list">

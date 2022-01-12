@@ -12,6 +12,7 @@ import Individual from './Individual';
 import Group3 from './Group3';
 import TaskStatus from './TaskStatus';
 import Summary from './Summary';
+import TeachAI from './TeachAI';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route exact path= "/group3" component={Group3}/>
       <Route exact path= "/taskstatus" component={TaskStatus}/>
       <Route exact path= "/summary" component={Summary}/>
+      <Route exact path= "/teachai" component={TeachAI}/>
       
     </div>
   );

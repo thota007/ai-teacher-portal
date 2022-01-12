@@ -22,6 +22,10 @@ function Home(){
         history.push("/summary")
     }
 
+    function goToAI(){
+        history.push("/teachai")
+    }
+
     return(
         <div>
             <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection:'row-reverse'}}>
@@ -31,7 +35,7 @@ function Home(){
             <Button onClick={goToPrep} style={{color:'black', width:'300px'}} variant='outlined'>Prep</Button><br/><br/>
             <Button  onClick={goToGroup} style={{color:'black', width:'300px'}} variant='outlined'>Real-Time Dashboard</Button><br/><br/>
             <Button  style={{color:'black', width:'300px'}} variant='outlined'>Summary</Button><br/><br/>
-            <Button  style={{color:'black',width:'300px'}} variant='outlined'>Teach the AI</Button><br/><br/>
+            <Button  onClick={goToAI} style={{color:'black',width:'300px'}} variant='outlined'>Teach the AI</Button><br/><br/>
    
         </div>
     );
