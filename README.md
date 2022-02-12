@@ -1,3 +1,6 @@
+URL of Project: http://ai-teacher-portal.herokuapp.com
+These dashboards are created in collaboration with iSAT (AI Institute) within the Institute of Cognitive Science at University of Colorado, Boulder. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
